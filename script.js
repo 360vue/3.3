@@ -103,6 +103,7 @@
  "definitions": [{
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10,
+ "manualRotationSpeed": 900,
  "initialPosition": {
   "class": "PanoramaCameraPosition",
   "yaw": 0,
@@ -156,6 +157,15 @@
  }
 },
 {
+ "mouseControlMode": "drag_rotation",
+ "class": "PanoramaPlayer",
+ "viewerArea": "this.MainViewer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "displayPlaybackBar": true
+},
+{
  "class": "PlayList",
  "items": [
   {
@@ -167,15 +177,6 @@
   }
  ],
  "id": "mainPlayList"
-},
-{
- "mouseControlMode": "drag_rotation",
- "class": "PanoramaPlayer",
- "viewerArea": "this.MainViewer",
- "gyroscopeVerticalDraggingEnabled": true,
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "displayPlaybackBar": true
 },
 {
  "hfovMax": 130,
